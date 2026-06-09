@@ -41,3 +41,13 @@ powershell -ExecutionPolicy Bypass -File .\build_number_based_extractor_exe.ps1
 
 打包结果默认生成到 `outputs/` 目录。该目录是生成产物，不提交到 Git。
 
+## 交接阅读顺序
+
+如果由另一个 agent 继续开发，建议按下面顺序阅读：
+
+1. `docs/superpowers/specs/2026-06-09-number-based-extraction-design.md`：当前最终需求和业务规则。
+2. `docs/superpowers/plans/2026-06-09-number-based-extraction.md`：当前实现交接记录，包含已取消的旧需求说明。
+3. `src/number_based_extractor/core.py`：核心筛选规则。
+4. `src/number_based_extractor/excel_io.py`：Excel 读取、模板导入导出、结果保存。
+5. `src/number_based_extractor/gui.py`：图形界面。
+6. `tests/test_number_based_core.py` 和 `tests/test_number_based_excel_io.py`：当前行为验证。
