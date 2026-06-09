@@ -1,0 +1,23 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local virtual environment/runtime copied into this workspace
+Lib/
+Scripts/
+
+# Generated build and temporary files
+work/
+outputs/
+*.spec
+
+# Packaged binaries and generated spreadsheets
+*.exe
+*.xls
+*.xlsx
+
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+
